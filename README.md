@@ -2,6 +2,10 @@
 
 Transformer-based Highlights Extraction (THExt)
 
+### Examples and demo
+
+- Highlights for ACL 2021 conference papers available here: [AI model](demos/acl_highlights_ai.md) - [CS model](demos/acl_highlights_cs.md)
+
 ## Installation
 
 Run the following to install
@@ -23,8 +27,8 @@ rm = RedundancyManager()
 h = Highlighter(sr, rm)
 
 # Define a set of sentences
-sentences = ["The pen is on the table", "I love cats"]
-abstract = "text of the abstract 1"
+sentences = ["This is the first sentence ...", "This is the Nth sentence..."]
+abstract = "Text of the abstract"
 number_extracted_highlights = 1
 
 highlights = h.get_highlights_simple(sentences, abstract, rel_w=1.0, pos_w=0.0, red_w=0.0, prefilter=False, NH = number_extracted_highlights)
