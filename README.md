@@ -4,7 +4,8 @@ Transformer-based Highlights Extraction (THExt)
 
 ### Examples and demo
 
-- Highlights for ACL 2021 conference papers available here: [AI model](demos/acl_highlights_ai.md) - [CS model](demos/acl_highlights_cs.md)
+- Highlights for [ACL 2021 conference papers](https://aclanthology.org/volumes/2021.acl-long/) available here: [AI model](demos/acl_highlights_ai.md) - [CS model](demos/acl_highlights_cs.md)
+- Highlights for [Journal of Machine Learning Research (Volume 22)](https://jmlr.org/papers/v22/) available here: [AI model](demos/jmlr_highlights_ai.md) - [CS model](demos/jmlr_highlights_cs.md)
 
 ## Installation
 
