@@ -1,11 +1,16 @@
 # THExt
 
-Transformer-based Highlights Extraction (THExt)
+**T**ransformer-based **H**ighlights **Ext**raction from scientific papers (**THExt**)
 
 ### Examples and demo
 
+All examples provided below have been extracted using the best-performing model reported in the paper. No manual pre- or post- processing has been applied for highlights extraction. The text of the papers has been parsed from PDF files using [GROBID](https://grobid.readthedocs.io/en/latest/).
+
 - Highlights for [ACL 2021 conference papers](https://aclanthology.org/volumes/2021.acl-long/) available here: [AI model](demos/acl_highlights_ai.md) - [CS model](demos/acl_highlights_cs.md)
 - Highlights for [Journal of Machine Learning Research (Volume 22)](https://jmlr.org/papers/v22/) available here: [AI model](demos/jmlr_highlights_ai.md) - [CS model](demos/jmlr_highlights_cs.md)
+
+Pre-trained models will be released after paper revision process.
+
 
 ## Installation
 
