@@ -17,7 +17,7 @@ Pre-trained models will be released after paper revision process.
 Run the following to install
 
 ```python
-pip install git+LINK_TO_THIS_REPO
+pip install git+https://github.com/MorenoLaQuatra/THExt.git
 ```
 
 ## Usage
