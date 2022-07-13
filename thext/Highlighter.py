@@ -1,6 +1,5 @@
-from THExt.RedundancyManager import RedundancyManager
-from THExt.SentenceRanker import SentenceRanker
-from THExt.SentenceRankerPlus import SentenceRankerPlus
+from thext import RedundancyManager
+from thext import SentenceRankerPlus
 import spacy
 import rouge #py-rouge
 import numpy as np
@@ -8,7 +7,7 @@ import numpy as np
 class Highlighter():
 
     def __init__(self, sentence_ranker, 
-            redundancy_manager, 
+            redundancy_manager=None, 
             sent_min_length=5, 
             sent_max_length=40, 
             spacy_modelname="en_core_web_lg", 
@@ -100,7 +99,6 @@ class Highlighter():
             zipped_lists = zip(indices, highlights)
             sorted_zipped_lists = sorted(zipped_lists)
             highlights = [h for _, h in sorted_zipped_lists]
-
 
         return highlights
 

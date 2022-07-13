@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
 setup(
     name='THExt',
     version='0.0.1',
-    description='THExt - Transformer-based Higlights Extraction',
-    py_modules=["Dataset", "DatasetPlus", "Highlighter", "RedundancyManager", "SentenceRanker", "SentenceRankerPlus"],
+    description='THExt - Transformer-based Highlights Extraction',
+    py_modules=["DatasetPlus", "Highlighter", "RedundancyManager", "SentenceRankerPlus"],
     #package_dir={'':'THExt'},
-    packages=find_packages(include=['THExt', 'THExt.*']),
+    packages=find_packages(include=['thext', 'thext.*']),
     classifiers={
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
