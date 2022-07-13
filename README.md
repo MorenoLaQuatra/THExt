@@ -65,9 +65,27 @@ for i, h in enumerate(highlights):
 
 ```
 
+## References:
+
+If you find it useful, please cite the following paper:
+
+```bibtex
+@article{thext,
+  title={Transformer-based highlights extraction from scientific papers},
+  author={La Quatra, Moreno and Cagliero, Luca},
+  journal={Knowledge-Based Systems},
+  pages={109382},
+  year={2022},
+  publisher={Elsevier}
+}
+```
+
+
 ## Developing THExt
 To install THExt, along with the tools you need to develop and run tests, run the following in your virtualenv
 
 ```bash
 $ pip install -e .[dev]
 ```
+
+
