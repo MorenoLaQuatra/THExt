@@ -17,20 +17,29 @@ Pre-trained models will be released after paper revision process.
 Run the following to install
 
 ```python
-pip install git+https://github.com/MorenoLaQuatra/THExt.git
+pip install thext
 python -m spacy download en_core_web_lg
 ```
 
 ## Usage
+
+### Pretrained models on 🤗 Hub:
+
+- Computer Science: https://huggingface.co/morenolq/thext-cs-scibert `morenolq/thext-cs-scibert`
+- Artificial Intelligence: https://huggingface.co/morenolq/thext-cs-scibert `morenolq/thext-ai-scibert`
+- Biology and Medicine: https://huggingface.co/morenolq/thext-cs-scibert `morenolq/thext-bio-scibert`
+
 ### Using pretrained models
 ```python
 from thext import SentenceRankerPlus
 from thext import RedundancyManager
 from thext import Highlighter
 
+base_model_name = "morenolq/thext-cs-scibert"
+model_name_or_path = "morenolq/thext-cs-scibert"
 sr = SentenceRankerPlus()
-sr.load_model(base_model_name, model_name_or_path=checkpoint_dir)
-h = Highlighter(sr, rm)
+sr.load_model(base_model_name=base_model_name, model_name_or_path=model_name_or_path)
+h = Highlighter(sr)
 
 # Define a set of sentences
 sentences = [
@@ -51,6 +60,8 @@ highlights = h.get_highlights_simple(sentences, abstract,
 
 for i, h in enumerate(highlights):
     print (f"{i}\t{h}")
+
+# 0	We propose a new approach, based on Transformer-based encoding, to highlight extraction. To the best of our knowledge, this is the first attempt to use transformer architectures to address automatic highlight generation.
 
 ```
 
